@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# ⚜️ Projeto CRUD com Node & MySQL ⚜️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto foi desenvolvido com o intuito de utilizar a API do ygoprodeck (https://ygoprodeck.com/api-guide/) para fazer uma ferramenta de busca de cartas dentro de um arquétipo específico, o escolhido para a aplicação foi o Blackwing!
 
-## Available Scripts
+### ⚜️ Instalação
 
-In the project directory, you can run:
+Clone o repositório com o comando:
+```
+git clone https://github.com/thspanhol/project-ygo.git
+```
 
-### `npm start`
+Depois entre na pasta do projeto e instale as dependências com o comando:
+```
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Após isso, para abrir a aplicação basta usar o comando:
+```
+npm start
+```
+### ⚜️ Como Utilizar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ao abrir a aplicação será renderizada uma tela de apresentação informando do que o projeto se trata junto com um botão SEARCH. Clicando nesse botão a página será direcionada para a tela de exibição dos cards, onde terá um input que pode ser usado para buscar cartas pelo nome e também 3 botões que filtram a lista para apenas as cartas do tipo monstro, mágica ou armadilha. Clicando em qualquer carta da lista, a página será redirecionada para uma terceira tela com os detalhes da carta clicada e um botão para voltar para a lista.
 
-### `npm test`
+## ⚜️ Possíveis alterações
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* O arquétipo de cartas escolhido pode ser alterado para outro, para isso basta alterar a string presente na linha 18 do arquivo AppContext (project-ygo\src\context\AppContext.jsx)
+* Exemplos de possíveis substituições:
+```
+https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Dark%20Magician
+```
+```
+https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Blue-Eyes
+```
 
-### `npm run build`
+## ⚜️ Executando os testes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Os testes da tela de apresentação podem ser feitos com o comando:
+```
+npm run test
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚜️ Construído com
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React - O framework usado para desenvolver os componentes JSX
+* CSS - Para estilização da página
+* YGO API - Usada para buscar e gerar as cartas
+* Router Dom - Para determinar as rotas da aplicação
+* Jest e Testing Library - Para desenvolver os testes
+* Vanilla-Tilt - Para o efeito hover nas cartas
 
-### `npm run eject`
+## ⚜️ Autor
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **Thales Spanhol** - [Perfil no GitHub](https://github.com/thspanhol)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
