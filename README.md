@@ -1,12 +1,12 @@
 # ⚜️ Projeto CRUD com Node & MySQL ⚜️
 
-O projeto foi desenvolvido com o intuito de utilizar a API do ygoprodeck (https://ygoprodeck.com/api-guide/) para fazer uma ferramenta de busca de cartas dentro de um arquétipo específico, o escolhido para a aplicação foi o Blackwing!
+O projeto foi desenvolvido com o intuito de praticar a manipulação de um banco de dados MySQL utilizando o Node. Para isso, desenvolvi na pasta frontend um formulário que executa todas funções CRUD elaboradas na pasta api.
 
 ### ⚜️ Instalação
 
 Clone o repositório com o comando:
 ```
-git clone https://github.com/thspanhol/project-ygo.git
+git clone https://github.com/thspanhol/crud-node-mysql.git
 ```
 
 Depois entre na pasta do projeto e instale as dependências com o comando:
